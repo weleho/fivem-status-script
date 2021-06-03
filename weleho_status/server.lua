@@ -23,7 +23,9 @@ function DeployStatusMessage()
 		footer = os.date(locales['date']..': %d/%m/%Y  |  '..locales['time']..': %I:%M %p')
 	end
 
-	print('Deplying Status Message ['..footer..']')
+	if Config.Debug then
+		print('Deplying Status Message ['..footer..']')
+	end
 
 	local embed = {
 		{
@@ -53,7 +55,9 @@ function UpdateStatusMessage()
 		footer = os.date(locales['date']..': %d/%m/%Y  |  '..locales['time']..': %I:%M %p')
 	end
 
-	print('Updating Status Message ['..footer..']')
+	if Config.Debug then
+		print('Updating Status Message ['..footer..']')
+	end
 
 
 	local message = json.encode({
