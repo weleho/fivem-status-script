@@ -1,5 +1,5 @@
 fx_version 'cerulean'
-games {'gta5'}
+games { 'rdr3', 'gta5' }
 
 author 'Weleho'
 description 'Server Status'
