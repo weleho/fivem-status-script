@@ -1,4 +1,4 @@
-# Fivem Status Bot by Weleho
+# Fivem Status Script by Weleho
 
 1. Create Webhook to channel you want.
 2. Configure config.lua and start script
