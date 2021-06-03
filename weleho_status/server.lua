@@ -2,15 +2,14 @@ local locales = Config.Locales[Config.Locale]
 
 Citizen.CreateThread(function()
     while true do
+	if Config.MessageId ~= nil and Config.MessageId ~= '' then
+		UpdateStatusMessage()
+	else
+		DeployStatusMessage()
+		break
+	end
 
-		if Config.MessageId ~= nil and Config.MessageId ~= '' then
-			UpdateStatusMessage()
-		else
-			DeployStatusMessage()
-			break
-		end
-
-		Citizen.Wait(Config.UpdateTime)
+	Citizen.Wait(Config.UpdateTime)
     end
 end)
 
