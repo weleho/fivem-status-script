@@ -9,7 +9,7 @@ Config.MessageId = '' --Copy messageid from deployed message and restart script!
 
 Config.UpdateTime = 1000*60*1 -- 1 minute
 Config.Use24hClock = true -- false = 12h clock
-Config.JoinLink = 'https://cfx.re/join/' -- Make sure that JoinLink is URL, like: https://cfx.re/join/xp34mg
+Config.JoinLink = 'https://cfx.re/join/' -- Make sure that JoinLink is URL, like: https://cfx.re/join/xp34mg, currenlty does not support Redm
 
 Config.EmbedColor = 3158326
 
